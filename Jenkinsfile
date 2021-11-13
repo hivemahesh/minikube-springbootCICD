@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools{
+	maven 'maven-3'
+    }	
 	environment {
 		registry = 'maheshroshini08/springbootabc-k8s:latest'
 		registryCredentials = 'docker-credentials'
